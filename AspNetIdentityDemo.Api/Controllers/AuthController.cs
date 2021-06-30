@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AspNetIdentityDemo.Api.Models;
+﻿using AspNetIdentityDemo.Api.Models;
 using AspNetIdentityDemo.Api.Services;
 using AspNetIdentityDemo.Shared;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using System;
+using System.Threading.Tasks;
 
 namespace AspNetIdentityDemo.Api.Controllers
 {
@@ -28,9 +25,9 @@ namespace AspNetIdentityDemo.Api.Controllers
 
         // /api/auth/register
         [HttpPost("Register")]
-        public async Task<IActionResult> RegisterAsync([FromBody]RegisterViewModel model)
+        public async Task<IActionResult> RegisterAsync([FromBody] RegisterViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var result = await _userService.RegisterUserAsync(model);
 
@@ -45,9 +42,9 @@ namespace AspNetIdentityDemo.Api.Controllers
 
         // /api/auth/login
         [HttpPost("Login")]
-        public async Task<IActionResult> LoginAsync([FromBody]LoginViewModel model)
+        public async Task<IActionResult> LoginAsync([FromBody] LoginViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var result = await _userService.LoginUserAsync(model);
 
@@ -72,7 +69,7 @@ namespace AspNetIdentityDemo.Api.Controllers
 
             var result = await _userService.ConfirmEmailAsync(userId, token);
 
-            if(result.IsSuccess)
+            if (result.IsSuccess)
             {
                 return Redirect($"{_configuration["AppUrl"]}/ConfirmEmail.html");
             }
@@ -97,9 +94,9 @@ namespace AspNetIdentityDemo.Api.Controllers
 
         // api/auth/resetpassword
         [HttpPost("ResetPassword")]
-        public async Task<IActionResult> ResetPassword([FromForm]ResetPasswordViewModel model)
+        public async Task<IActionResult> ResetPassword([FromForm] ResetPasswordViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var result = await _userService.ResetPasswordAsync(model);
 

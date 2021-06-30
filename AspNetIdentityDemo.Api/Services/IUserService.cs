@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
@@ -33,12 +32,12 @@ namespace AspNetIdentityDemo.Api.Services
 
         private UserManager<IdentityUser> _userManger;
         private IConfiguration _configuration;
-        private IMailService _mailService; 
-        public UserService(UserManager<IdentityUser> userManager, IConfiguration configuration, IMailService mailService) 
+        private IMailService _mailService;
+        public UserService(UserManager<IdentityUser> userManager, IConfiguration configuration, IMailService mailService)
         {
             _userManger = userManager;
             _configuration = configuration;
-            _mailService = mailService; 
+            _mailService = mailService;
         }
 
         public async Task<UserManagerResponse> RegisterUserAsync(RegisterViewModel model)
@@ -61,7 +60,7 @@ namespace AspNetIdentityDemo.Api.Services
 
             var result = await _userManger.CreateAsync(identityUser, model.Password);
 
-            if(result.Succeeded)
+            if (result.Succeeded)
             {
                 var confirmEmailToken = await _userManger.GenerateEmailConfirmationTokenAsync(identityUser);
 
@@ -94,7 +93,7 @@ namespace AspNetIdentityDemo.Api.Services
         {
             var user = await _userManger.FindByEmailAsync(model.Email);
 
-            if(user == null)
+            if (user == null)
             {
                 return new UserManagerResponse
                 {
@@ -105,7 +104,7 @@ namespace AspNetIdentityDemo.Api.Services
 
             var result = await _userManger.CheckPasswordAsync(user, model.Password);
 
-            if(!result)
+            if (!result)
                 return new UserManagerResponse
                 {
                     Message = "Invalid password",
@@ -203,7 +202,7 @@ namespace AspNetIdentityDemo.Api.Services
                     Message = "No user associated with email",
                 };
 
-            if(model.NewPassword != model.ConfirmPassword)
+            if (model.NewPassword != model.ConfirmPassword)
                 return new UserManagerResponse
                 {
                     IsSuccess = false,

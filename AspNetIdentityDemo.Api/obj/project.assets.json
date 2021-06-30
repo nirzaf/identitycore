@@ -1552,7 +1552,7 @@
           "lib/netstandard1.3/System.ComponentModel.dll": {}
         }
       },
-      "System.ComponentModel.Annotations/4.7.0": {
+      "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
           "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
@@ -2961,6 +2961,9 @@
       "AspNetIdentityDemo.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/AspNetIdentityDemo.Shared.dll": {}
         },
@@ -5427,13 +5430,14 @@
         "system.componentmodel.nuspec"
       ]
     },
-    "System.ComponentModel.Annotations/4.7.0": {
-      "sha512": "0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+    "System.ComponentModel.Annotations/5.0.0": {
+      "sha512": "dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
       "type": "package",
-      "path": "system.componentmodel.annotations/4.7.0",
+      "path": "system.componentmodel.annotations/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -5510,7 +5514,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.componentmodel.annotations.4.7.0.nupkg.sha512",
+        "system.componentmodel.annotations.5.0.0.nupkg.sha512",
         "system.componentmodel.annotations.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -9299,27 +9303,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dell\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dell\\Documents\\AK Academy\\Course 1\\App\\AspNetIdentityDemo\\AspNetIdentityDemo.Api\\AspNetIdentityDemo.Api.csproj",
+      "projectUniqueName": "E:\\Users\\admin\\Source\\Repos\\identitycorecourse\\AspNetIdentityDemo.Api\\AspNetIdentityDemo.Api.csproj",
       "projectName": "AspNetIdentityDemo.Api",
-      "projectPath": "C:\\Users\\dell\\Documents\\AK Academy\\Course 1\\App\\AspNetIdentityDemo\\AspNetIdentityDemo.Api\\AspNetIdentityDemo.Api.csproj",
-      "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dell\\Documents\\AK Academy\\Course 1\\App\\AspNetIdentityDemo\\AspNetIdentityDemo.Api\\obj\\",
+      "projectPath": "E:\\Users\\admin\\Source\\Repos\\identitycorecourse\\AspNetIdentityDemo.Api\\AspNetIdentityDemo.Api.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "E:\\Users\\admin\\Source\\Repos\\identitycorecourse\\AspNetIdentityDemo.Api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -9330,9 +9327,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\dell\\Documents\\AK Academy\\Course 1\\App\\AspNetIdentityDemo\\AspNetIdentityDemo.Shared\\AspNetIdentityDemo.Shared.csproj": {
-              "projectPath": "C:\\Users\\dell\\Documents\\AK Academy\\Course 1\\App\\AspNetIdentityDemo\\AspNetIdentityDemo.Shared\\AspNetIdentityDemo.Shared.csproj"
+            "E:\\Users\\admin\\Source\\Repos\\identitycorecourse\\AspNetIdentityDemo.Shared\\AspNetIdentityDemo.Shared.csproj": {
+              "projectPath": "E:\\Users\\admin\\Source\\Repos\\identitycorecourse\\AspNetIdentityDemo.Shared\\AspNetIdentityDemo.Shared.csproj"
             }
           }
         }
@@ -9345,6 +9343,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -9403,7 +9402,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -1,9 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using SendGrid;
 using SendGrid.Helpers.Mail;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace AspNetIdentityDemo.Api.Services
@@ -20,7 +17,7 @@ namespace AspNetIdentityDemo.Api.Services
 
         public SendGridMailService(IConfiguration configuration)
         {
-            _configuration = configuration; 
+            _configuration = configuration;
         }
 
         public async Task SendEmailAsync(string toEmail, string subject, string content)
