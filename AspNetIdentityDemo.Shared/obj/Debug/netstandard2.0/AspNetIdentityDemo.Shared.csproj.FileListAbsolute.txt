@@ -9,3 +9,12 @@ C:\Users\dell\Documents\AK Academy\Course 1\App\AspNetIdentityDemo\AspNetIdentit
 C:\Users\dell\Documents\AK Academy\Course 1\App\AspNetIdentityDemo\AspNetIdentityDemo.Shared\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
 C:\Users\dell\Documents\AK Academy\Course 1\App\AspNetIdentityDemo\AspNetIdentityDemo.Shared\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
 C:\Users\dell\Documents\AK Academy\Course 1\App\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.csproj.CopyComplete
+E:\Users\admin\Source\Repos\identitycorecourse\AspNetIdentityDemo.Shared\bin\Debug\netstandard2.0\AspNetIdentityDemo.Shared.deps.json
+E:\Users\admin\Source\Repos\identitycorecourse\AspNetIdentityDemo.Shared\bin\Debug\netstandard2.0\AspNetIdentityDemo.Shared.dll
+E:\Users\admin\Source\Repos\identitycorecourse\AspNetIdentityDemo.Shared\bin\Debug\netstandard2.0\AspNetIdentityDemo.Shared.pdb
+E:\Users\admin\Source\Repos\identitycorecourse\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\admin\Source\Repos\identitycorecourse\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.AssemblyInfoInputs.cache
+E:\Users\admin\Source\Repos\identitycorecourse\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.AssemblyInfo.cs
+E:\Users\admin\Source\Repos\identitycorecourse\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.csproj.CoreCompileInputs.cache
+E:\Users\admin\Source\Repos\identitycorecourse\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.dll
+E:\Users\admin\Source\Repos\identitycorecourse\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.pdb
