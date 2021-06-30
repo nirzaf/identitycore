@@ -108,7 +108,5 @@ namespace AspNetIdentityDemo.Api.Controllers
 
             return BadRequest("Some properties are not valid");
         }
-
-
     }
 }
